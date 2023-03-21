@@ -37,7 +37,7 @@ Want a feature added now? [Open a bounty](https://www.bountysource.com/teams/das
 docker create \
   --name=dashmachine \
   -p 5000:5000 \
-  -v path/to/data:/dashmachine/dashmachine/user_data \
+  -v /etc/optimal/dashmachine:/dashmachine/dashmachine/user_data \
   --restart unless-stopped \
   rmountjoy/dashmachine:latest
 ```
